@@ -2,7 +2,6 @@
 
 Este é um projeto de site estático inspirado no jogo **Red Dead Redemption**, criado com HTML, CSS e JavaScript. Ele possui uma interface estilizada e um botão interativo que exibe o trailer do jogo ao passar o mouse.
 
-> 🚀 Deploy online: [Clique aqui para acessar](https://AlexBruno099.github.io/Project-Red-Dead)
 
 ---
 
