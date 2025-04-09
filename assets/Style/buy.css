@@ -1,0 +1,132 @@
+/* --- Seção de Compras --- */
+.buy-section {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #0a0a0a;
+}
+
+.buy-section h2 {
+    font-size: 3rem;
+    color: #d4af37;
+    margin-bottom: 50px;
+}
+
+/* Tabela de Preços */
+.price-table {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.price-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 25px;
+    width: 300px;
+    transition: transform 0.3s;
+    border: 1px solid #333;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    border-color: #d4af37;
+}
+
+.price-card.highlight {
+    border: 2px solid #d4af37;
+    position: relative;
+}
+
+.price-card.highlight::before {
+    content: "MAIS POPULAR";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d4af37;
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.price-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.price-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.price-card ul {
+    list-style: none;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.price-card ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.price-card ul li::before {
+    content: "•";
+    color: #d4af37;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.price-card .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d4af37;
+    margin: 20px 0;
+}
+
+/* Plataformas */
+.platforms {
+    margin-top: 60px;
+}
+
+.platforms h3 {
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.platform-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.platform-icons img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(0.8);
+    transition: filter 0.3s;
+}
+
+.platform-icons img:hover {
+    filter: grayscale(0%) brightness(1);
+}
+
+@media (max-width: 768px) {
+    .price-table {
+        flex-direction: column;
+        align-items: center;
+    }
+    .price-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
